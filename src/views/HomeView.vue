@@ -12,24 +12,25 @@
   <h2 class="title-section">We are in the mission to help the helpless</h2>
   <div class="boxes">
     <div class="box">
-      <i class="fa fa-user-o" aria-hidden="true"></i>
-      <h3 class="title-box">Clean Water</h3>
-      <p class="txt-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis quia sit maiores aperiam. </p>
+      <!-- <i class="fa fa-lightbulb-o" aria-hidden="true"></i> -->
+      <img src="../assets/images/221.png" alt="image non disponible" class="imgi">
+      <h3 class="title-box">Find a solution</h3>
+      <p class="txt-box">Let's work together to find the solution that takes your fundraising efforts to new heights. Your cause deserves nothing less. </p>
     </div>
     <div class="box">
-      <i class="fa fa-user-o" aria-hidden="true"></i>
-      <h3 class="title-box">Clean Water</h3>
-      <p class="txt-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis quia sit maiores aperiam. </p>
+      <img src="../assets/images/flag.svg" alt="image non disponible" class="imgi">
+      <h3 class="title-box">Start with the basics</h3>
+      <p class="txt-box">Every journey begins with a single step, and every significant change starts with understanding and embracing the basics. </p>
     </div>
     <div class="box">
-      <i class="fa fa-user-o" aria-hidden="true"></i>
-      <h3 class="title-box">Clean Water</h3>
-      <p class="txt-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis quia sit maiores aperiam. </p>
+      <img src="../assets/images/speech.svg" alt="image non disponible" class="imgi">
+      <h3 class="title-box">Tell your story</h3>
+      <p class="txt-box">When you tell your story, you open a window into your world, allowing others to glimpse the challenges you've faced and the milestones you've achieved.</p>
     </div>
     <div class="box">
-      <i class="fa fa-user-o" aria-hidden="true"></i>
-      <h3 class="title-box">Clean Water</h3>
-      <p class="txt-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis quia sit maiores aperiam. </p>
+      <img src="../assets/images/speak.svg" alt="image non disponible" class="imgi">
+      <h3 class="title-box">Share with everyone</h3>
+      <p class="txt-box">Sharing is caring, and your support is invaluable in helping us reach our fundraising goal.</p>
     </div>
   </div>
  </section>
@@ -37,8 +38,8 @@
   <div class="container">
     <div class="content1">
       <h2 class="title-content">We are here to help the helpless</h2>
-      <p class="txt-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, incidunt saepe. Praesentium magni odio nesciunt perspiciatis placeat deleniti obcaecati sapiente, eos ipsa adipisci. Necessitatibus earum reiciendis veniam, quam exercitationem recusandae.</p> <br>
-      <p class="txt-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, incidunt saepe. Praesentium magni odio nesciunt perspiciatis placeat deleniti obcaecati sapiente, eos ipsa adipisci. Necessitatibus earum reiciendis veniam, quam exercitationem recusandae.</p>
+      <p class="txt-section">In a world often fraught with challenges and uncertainties, our unwavering mission stands clear: we are here to help the helpless. With hearts brimming with compassion and hands ready to extend support, we step forward to be a guiding light for those who find themselves in the shadows of adversity.</p> <br>
+      <p class="txt-section">We stand united, driven by the profound belief that by helping the helpless, we not only elevate lives but also cultivate a spirit of compassion that ripples through communities and generations, creating a tapestry of support and care that binds us all together.</p>
       <button class="btn-more">Know More</button>
     </div>
     <div class="content2">
@@ -191,11 +192,17 @@ export default {
   justify-content:flex-start;
   width:100%;
   padding:16rem 3.5rem 5rem 10rem;
+  background-image: url('../assets/images/cov.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .title{
   font-size:3rem;
   letter-spacing: 3px;
+  color:#f9f9f9;
 }
 .title span{
   color:#e89abc;
@@ -204,6 +211,7 @@ export default {
   width:30rem;
   margin:1rem 0rem;
   font-size:1.2rem;
+  color:#f9f9f9;
 }
 .btn-donate{
   color:#fff;
@@ -212,6 +220,7 @@ export default {
   border:none;
   font-size:1.5rem;
   background:#e89abc;
+  font-weight:600;
 }
 
 /* =========================================================================== */
@@ -232,23 +241,27 @@ export default {
 }
 .box{
   margin:2rem 1.5rem 0 0;
-  border:1px solid red;
+  border:1px solid #e89abc;
+  border-radius:5px;
 }
-.box i{
-  font-size:100px;
-  display:flex;
-  align-items:center;
-  justify-content: center;
-  padding:0.5rem 0;
+.imgi{
+  width:110px;
+  height:110px;
+  display:block;
+margin-left:auto;
+margin-right:auto;
+padding:0.5rem 0;
 }
 .box .title-box{
   font-size:1.3rem;
   text-align:center;
   padding:0.5rem 0;
+  color:#e89abc;
 }
 .box .txt-box{
   text-align:justify;
   padding:0.5rem;
+  color:#7e7c7c;
 }
 /* ==================================================================================== */
 .section3{
@@ -272,6 +285,7 @@ export default {
 .txt-section{
   font-size:1.2rem;
   text-align: justify;
+  color:#7e7c7c;
 }
 .btn-more{
   padding:1rem 2rem;
@@ -368,14 +382,14 @@ export default {
 .call-box{
   height:400px;
   width:280px;
-  background:#7e7c7c;
+  background:#f9f9f9;
   border-radius:5px;
    margin:0.5rem;
    border:none;
 }
 .call-box:hover{
   border:2px solid #e89abc;
-  transition:0.5s;
+  transition:1s;
 }
 .call-box i{
   font-size:100px;
@@ -413,6 +427,8 @@ export default {
 /* ================================================================================= */
 .section6{
   width:100%;
+  
+
 }
 .donation{
   background:#e89abc;
@@ -420,6 +436,10 @@ export default {
   align-items:center;
   justify-content:space-between;
   padding:7rem 5rem 7rem 10rem;
+  background-image: url("../assets/images/mon.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position:bottom;
 }
 .title-count{
   font-size:2rem;

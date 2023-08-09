@@ -43,7 +43,7 @@
       <button class="btn-more">Know More</button>
     </div>
     <div class="content2">
-      <img src="#" alt="Image non disponible" class="img1">
+      <img src="../assets/images/children.jpg" alt="Image non disponible" class="img1">
     </div>
   </div>
  </section>
@@ -51,7 +51,7 @@
   <h2 class="title01">Popular causes What you should know</h2>
   <div class="grid">
     <div class="grid-box">
-      <img src="#" alt="image non disponible" class="img-fund">
+      <img src="../assets/images/7.png" alt="image non disponible" class="img-fund">
       <h3 class="ttle-fund">Help me Restoring my Jeep</h3>
       <div class="action">
         <h4 class="number-fund">1 Donation</h4>
@@ -59,18 +59,18 @@
       </div>
     </div>
      <div class="grid-box">
-       <img src="#" alt="image non disponible" class="img-fund">
-      <h3 class="ttle-fund">Help me Restoring my Jeep</h3>
+       <img src="../assets/images/1.jpg" alt="image non disponible" class="img-fund">
+      <h3 class="ttle-fund">Attending school this year</h3>
       <div class="action">
-        <h4 class="number-fund">1 Donation</h4>
+        <h4 class="number-fund">21 Donation</h4>
         <button class="btn-fund">Donate Now</button>
     </div>
     </div>
      <div class="grid-box">
-       <img src="#" alt="image non disponible" class="img-fund">
-      <h3 class="ttle-fund">Help me Restoring my Jeep</h3>
+       <img src="../assets/images/funer.jpg" alt="image non disponible" class="img-fund">
+      <h3 class="ttle-fund">fundraising for a funeral</h3>
       <div class="action">
-        <h4 class="number-fund">1 Donation</h4>
+        <h4 class="number-fund">189 Donation</h4>
         <button class="btn-fund">Donate Now</button>
     </div>
     </div>
@@ -84,17 +84,17 @@
     </div>
     <div class="call">
       <div class="call-box">
-        <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+        <img src="../assets/images/hands.svg" alt="image non disponible" class="img-box">
         <h3 class="call-title">Yourself</h3>
         <a href="#" class="go-action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
       </div>
       <div class="call-box">
-        <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+        <img src="../assets/images/friends.svg" alt="image non disponible" class="img-box">
         <h3 class="call-title">Friends & Family</h3>
         <a href="#" class="go-action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
       </div>
       <div class="call-box">
-        <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+        <img src="../assets/images/charity.svg" alt="image non disponible" class="img-box">
         <h3 class="call-title">Charity</h3>
         <a href="#" class="go-action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
       </div>
@@ -131,7 +131,8 @@
       </div>
     </div>
     <div class="contain-start2">
-      <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+      <!-- <i class="fa fa-free-code-camp" aria-hidden="true"></i> -->
+      <img src="../assets/images/join.png" alt="image non disponible" class="img-contain">
     </div>
   </div>
  </section>
@@ -304,12 +305,14 @@ padding:0.5rem 0;
   margin:0 10rem 0 5rem;
   padding:1rem;
   width:30rem;
-  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-   background:#e89abc;
+  /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
+   /* background:#e89abc; */
 }
-/* .img1{
+.img1{
+  height:500px;
+  width:500px;
   clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-} */
+}
 /* ================================================================================ */
 .section4{
   width:100%;
@@ -332,10 +335,15 @@ padding:0.5rem 0;
   height:400px;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 }
+.img-fund{
+  width:350px;
+  height: 260px;
+}
 .ttle-fund{
   text-align:center;
   font-size:1.4rem;
   color:#e89abc;
+  margin:1rem 0;
 }
 .action{
   display:flex;
@@ -392,11 +400,19 @@ padding:0.5rem 0;
   transition:1s;
 }
 .call-box i{
-  font-size:100px;
+  /* font-size:100px; */
   display:flex;
   align-items:center;
   justify-content: center;
   padding:1rem 0;
+}
+.img-box{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1rem 0;
+  height:150px;
+  width:150px;
 }
 .call-title{
   text-align:center;
@@ -438,16 +454,18 @@ padding:0.5rem 0;
   padding:7rem 5rem 7rem 10rem;
   background-image: url("../assets/images/mon.jpg");
   background-size: 100%;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position:bottom;
 }
 .title-count{
   font-size:2rem;
   font-weight:800;
+  color:#fff;
 }
 .p-count{
   font-size:1rem;
   font-weight:600;
+  color:#fff;
 }
 /* =============================================================================== */
 .section7{
@@ -495,6 +513,10 @@ padding:0.5rem 0;
 }
 .contain-start2 i{
   font-size:400px;
+}
+.img-contain{
+  height:400px;
+  width:400px;
 }
 /* ======================================================================== */
 footer{

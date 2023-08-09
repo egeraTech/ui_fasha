@@ -218,10 +218,15 @@ export default {
   color:#fff;
   padding:1rem 2rem;
   border-radius:5px;
-  border:none;
+  border:1px solid #e89abc;
   font-size:1.5rem;
   background:#e89abc;
-  font-weight:600;
+  cursor: pointer;
+}
+.btn-donate:hover{
+  background:#f9f9f9;
+  color:#e89abc;
+  transition:0.5s;
 }
 
 /* =========================================================================== */
@@ -300,6 +305,13 @@ padding:0.5rem 0;
   margin-right:auto;
   margin-top:30px;
   cursor:pointer;
+  border:1px solid #e89abc;
+}
+.btn-more:hover{
+  color:#e89abc;
+  background:#f9f9f9;
+  transition:0.5s;
+  border:1px solid #e89abc;
 }
 .content2{
   margin:0 10rem 0 5rem;
@@ -332,18 +344,24 @@ padding:0.5rem 0;
 .grid-box{
   border-radius:5px;
   width:350px;
-  height:400px;
+  height:auto;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 }
 .img-fund{
   width:350px;
   height: 260px;
+  border-radius:inherit;
 }
 .ttle-fund{
   text-align:center;
   font-size:1.4rem;
   color:#e89abc;
   margin:1rem 0;
+  font-weight: 100;
+}
+.number-fund{
+  color:#7e7c7c;
+  padding:1rem 0;
 }
 .action{
   display:flex;
@@ -357,6 +375,7 @@ padding:0.5rem 0;
   border-radius:5px;
   color:#e89abc;
   cursor:pointer;
+  font-weight:600;
 }
 .btn-fund:hover{
   background:#e89abc;
@@ -380,6 +399,7 @@ padding:0.5rem 0;
 .ttle-contain{
   font-size:2.5rem;
   font-weight:700;
+  color:#e89abc;
 }
 .call{
   display:flex;
@@ -418,6 +438,7 @@ padding:0.5rem 0;
   text-align:center;
   font-size:1.4rem;
   padding:3rem 0;
+  color:#7e7c7c;
 }
 .go-action{
   padding:1rem;
@@ -443,11 +464,9 @@ padding:0.5rem 0;
 /* ================================================================================= */
 .section6{
   width:100%;
-  
-
 }
 .donation{
-  background:#e89abc;
+  /* background:#e89abc; */
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -486,6 +505,7 @@ padding:0.5rem 0;
 }
 .title-start{
   font-size:2.5rem;
+  color:rgb(44, 44, 44);
 }
 .btn-div{
   margin-top:3rem;
@@ -495,10 +515,15 @@ padding:0.5rem 0;
   background:#e89abc;
   color:#fff;
   font-size:1.4rem;
-  border:none;
+  border:1px solid #e89abc;
   border-radius:5px;
   margin-right:1rem;
   cursor:pointer;
+}
+.btn-start:hover{
+  color:#e89abc;
+  background:#f9f9f9;
+  transition:0.5s;
 }
 .btn-how{
    padding:1rem 2rem;
@@ -506,6 +531,7 @@ padding:0.5rem 0;
   font-size:1.4rem;
   border:none;
   border-radius:5px;
+  cursor:pointer;
 }
 .contain-start2{
   width:50%;

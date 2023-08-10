@@ -1,21 +1,26 @@
 <template>
     <div class="container">
         <div class="aside">
-           <router-link to="/"><img src="@/assets/images/logoAyi.png" alt="image non disponible" class="img-logo"></router-link>
+            <router-link to="/"><img src="@/assets/images/logoAyi.png" alt="image non disponible" class="img-logo"></router-link>
             <h4 class="title-aside">Great progress</h4>
-            <h2 class="title-pri">Sign in to save and continue</h2>
+            <h2 class="title-pri">Create an account to save and continue</h2>
         </div>
         <div class="login-form">
-            <p class="link">Don't have an account ? <router-link to="/signup" class="signup">Sign up</router-link></p>
+            <p class="link">Already have an account ? <router-link to="/signin" class="signup">Sign in</router-link></p>
             <div class="form">
                 <h3 class="title-form">Your account details</h3>
                 <div class="form-input">
+                    <div class="name">
+                        <input type="text" placeholder="Firstname..." class="input1" >
+                         <input type="text" placeholder="Lastname..." class="input1">
+                    </div>
                     <input type="text" placeholder="Email adress..." class="input" >
                     <input type="password" placeholder="Password..." class="input">
+                    <input type="password" placeholder="Confirm Password..." class="input">
                     <span><a href="#" class="forget">Forgot your password ?</a></span>
-                    <button class="btn-sign">Sign in</button>
+                    <button class="btn-sign">Sign Up</button>
                 </div>
-                <p class="click">By Clicking to sign in, you agree to the Fasha <a href="#" class="cookies">Terms</a> and <a href="#" class="cookies">Privacy notice</a></p>
+                
                 
             </div>
         </div>
@@ -64,7 +69,7 @@ export default {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 .link{
-    padding:3rem 2rem 5rem 35rem;
+    padding:3rem 2rem 4rem 35rem;
     font-size:1.2rem;
     color:#7e7c7c;
 }
@@ -72,11 +77,26 @@ export default {
     color:#7e7c7c;
 }
 .form{
-    padding:4rem 3rem 3rem 5rem;
+    padding:0 3rem 3rem 5rem;
 }
 .title-form{
     padding:2rem 0;
     font-size:1.5rem;
+    color:#7e7c7c;
+}
+.name{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input1{
+    width:350px;
+    height:50px;
+    border-radius:10px;
+    outline:none;
+    border:1px solid #7e7c7c;
+    padding:0.5rem 1rem;
+    font-size:1rem;
     color:#7e7c7c;
 }
 .form-input{
@@ -95,6 +115,7 @@ export default {
 }
 .forget{
     color:#7e7c7c;
+    display: none;
 }
 .forget:hover{
     color:#e89acc;
@@ -114,16 +135,5 @@ export default {
     transition:0.5s;
     border:1px solid #afadad;
 }
-.click{
-    padding:2rem 0 0 0;
-    font-size:1.2rem;
-    color:#7e7c7c;
-}
-.cookies{
-    color:#7e7c7c;
-}
-.cookies:hover{
-    color:#e89acc;
-    transition:0.5s;
-}
+
 </style>

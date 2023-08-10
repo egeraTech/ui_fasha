@@ -7,9 +7,9 @@
         <router-link to="/" class="nav-item">Home</router-link>
         <router-link to="/about" class="nav-item">About</router-link>
         <router-link to="/howitwork" class="nav-item">How It works</router-link>
-        <router-link to="#" class="nav-item">Contact</router-link>
-        <router-link to="#" class="nav-item">Sign In</router-link>
-        <button class="btn-item">DONATE</button>
+        <!-- <router-link to="#" class="nav-item">Contact</router-link> -->
+        <router-link to="/signin" class="nav-item">Sign In</router-link>
+        <button class="btn-item">START DONATE</button>
     </nav>
 </header>
 </template>

@@ -81,6 +81,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  filter: grayscale(100%);
 }
 /* ============================================================================== */
 .section2{

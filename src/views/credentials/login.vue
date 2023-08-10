@@ -58,7 +58,7 @@ export default {
 }
 .login-form{
     width:900px;
-    height:650px;
+    height:auto;
     background:#fff;
     border-radius:50px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);

@@ -13,7 +13,7 @@
   <div class="boxes">
     <div class="box">
       <!-- <i class="fa fa-lightbulb-o" aria-hidden="true"></i> -->
-      <img src="../assets/images/221.png" alt="image non disponible" class="imgi">
+      <img src="../assets/images/221.png" alt="image non disponible" class="imgi" loading="lazy">
       <h3 class="title-box">Find a solution</h3>
       <p class="txt-box">Let's work together to find the solution that takes your fundraising efforts to new heights. Your cause deserves nothing less. </p>
     </div>
@@ -43,7 +43,7 @@
       <button class="btn-more">Know More</button>
     </div>
     <div class="content2">
-      <img src="../assets/images/children.jpg" alt="Image non disponible" class="img1">
+      <img src="../assets/images/children.jpg" alt="Image non disponible" class="img1" loading="lazy">
     </div>
   </div>
  </section>
@@ -51,7 +51,7 @@
   <h2 class="title01">Popular causes What you should know</h2>
   <div class="grid">
     <div class="grid-box">
-      <img src="../assets/images/7.png" alt="image non disponible" class="img-fund">
+      <img src="../assets/images/7.png" alt="image non disponible" class="img-fund" loading="lazy">
       <h3 class="ttle-fund">Help me Restoring my Jeep</h3>
       <div class="action">
         <h4 class="number-fund">1 Donation</h4>
@@ -59,7 +59,7 @@
       </div>
     </div>
      <div class="grid-box">
-       <img src="../assets/images/1.jpg" alt="image non disponible" class="img-fund">
+       <img src="../assets/images/1.jpg" alt="image non disponible" class="img-fund" loading="lazy">
       <h3 class="ttle-fund">Attending school this year</h3>
       <div class="action">
         <h4 class="number-fund">21 Donation</h4>
@@ -67,7 +67,7 @@
     </div>
     </div>
      <div class="grid-box">
-       <img src="../assets/images/funer.jpg" alt="image non disponible" class="img-fund">
+       <img src="../assets/images/funer.jpg" alt="image non disponible" class="img-fund" loading="lazy">
       <h3 class="ttle-fund">fundraising for a funeral</h3>
       <div class="action">
         <h4 class="number-fund">189 Donation</h4>
@@ -171,7 +171,21 @@ export default {
   color:#f9f9f9;
 }
 .title span{
-  color:#e89abc;
+  color:#fff;
+  background:linear-gradient(to right, #095fab 10%, #25abe5 50%, #be7b7b 68%);
+  background-size:auto auto;
+  background-clip:border-box;
+  background-size:200% auto;
+  color:#fff;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display:inline-block;
+}
+@keyframes textclip{
+  to{
+    background-position:200% center;
+  }
 }
 .txt1{
   width:30rem;
@@ -279,16 +293,22 @@ padding:0.5rem 0;
   border:1px solid #e89abc;
 }
 .content2{
-  margin:0 10rem 0 5rem;
+  margin:0 3rem 0 5rem;
   padding:1rem;
-  width:30rem;
+  width:50rem;
+  overflow:hidden;
+  cursor:pointer;
   /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
    /* background:#e89abc; */
 }
 .img1{
+  transition:transform 0.5s;
   height:500px;
   width:500px;
   clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+.content2:hover .img1{
+  transform:scale(1.1);
 }
 /* ================================================================================ */
 .section4{

@@ -9,7 +9,7 @@
         <router-link to="/howitwork" class="nav-item">How It works</router-link>
         <!-- <router-link to="#" class="nav-item">Contact</router-link> -->
         <router-link to="/signin" class="nav-item">Sign In</router-link>
-        <button class="btn-item">START DONATE</button>
+        <button class="btn-item">START FASHA</button>
     </nav>
 </header>
 </template>

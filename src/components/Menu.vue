@@ -4,11 +4,11 @@
         <img src="../assets/images/logoAyi.png" alt="image non disponible" class="img-logo">
     </a>
     <nav>
-        <a href="#" class="nav-item">Home</a>
-        <a href="#" class="nav-item">About</a>
-        <a href="#" class="nav-item">How It works</a>
-        <a href="#" class="nav-item">Contact</a>
-        <a href="#" class="nav-item">Sign In</a>
+        <router-link to="/" class="nav-item">Home</router-link>
+        <router-link to="#" class="nav-item">About</router-link>
+        <router-link to="/howitwork" class="nav-item">How It works</router-link>
+        <router-link to="#" class="nav-item">Contact</router-link>
+        <router-link to="#" class="nav-item">Sign In</router-link>
         <button class="btn-item">DONATE</button>
     </nav>
 </header>

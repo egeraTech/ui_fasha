@@ -9,6 +9,7 @@
         <router-link to="/howitwork" class="nav-item">How It works</router-link>
         <!-- <router-link to="#" class="nav-item">Contact</router-link> -->
         <router-link to="/signin" class="nav-item">Sign In</router-link>
+        <router-link to="/account" class="nav-item">Account</router-link>
         <button class="btn-item">START FASHA</button>
     </nav>
 </header>

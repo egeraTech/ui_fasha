@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Howitwork from '../views/Howitwork.vue'
 import Login from '../views/credentials/login.vue'
 import Signin from '../views/credentials/signin.vue'
+import AccountView from '../views/AccountView.vue'
 
 const routes = [
   { path: '/',name: 'home',component: HomeView},
@@ -17,6 +18,7 @@ const routes = [
   },
   { path: '/signin',name: 'login',component: Login},
   { path: '/signup',name: 'signin',component: Signin},
+  { path: '/account',name: 'accountview',component: AccountView},
 ]
 
 const router = createRouter({

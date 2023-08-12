@@ -1,5 +1,5 @@
 <template>
-    <Menu/>
+    <MenuLog/>
     <section class="section1">
 
     </section>
@@ -75,10 +75,12 @@
 <script>
 import Menu from '@/components/Menu.vue'
 import Footer from '@/components/Footer.vue'
+import MenuLog from '@/components/MenuLog.vue'
 export default {
   name:'Howitwork',
   components:{
     Menu,
+    MenuLog,
     Footer
   }
 }

@@ -9,7 +9,7 @@
         <router-link to="/howitwork" class="nav-item">How It works</router-link>
         <!-- <router-link to="#" class="nav-item">Contact</router-link> -->
         <router-link to="/signin" class="nav-item">Sign In</router-link>
-        <button class="btn-item">START FASHA</button>
+        <router-link to="/newfund" class="btn-item">START FASHA</router-link>
     </nav>
 </header>
 </template>
@@ -34,6 +34,10 @@ header .logo{
     height:60px;
     width:60px;
 }
+nav{
+    display: flex;
+    align-items: center;
+}
 nav .nav-item{
     margin:0 1rem 0 1rem;
     text-decoration: none;
@@ -53,5 +57,7 @@ nav .btn-item{
     border:none;
     background:#e89abc;
     color:#fff;
+    cursor:pointer;
+    text-decoration: none;
 }
 </style>

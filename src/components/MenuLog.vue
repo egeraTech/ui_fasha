@@ -13,7 +13,7 @@
         <div class="dropdown">
         <button class="dropbtn">Munyeshaka <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
             <div class="dropdown-content">
-                <router-link to="#" class="dropdown-link">Start a new Fasha</router-link>
+                <router-link to="/newfund" class="dropdown-link">Start a new Fasha</router-link>
                 <router-link to="#" class="dropdown-link">Your Fundraiser</router-link>
                 <router-link to="/account" class="dropdown-link">Account Setting</router-link>
                 <router-link to="#" class="dropdown-link">Sign out</router-link>
@@ -106,7 +106,7 @@ nav .nav-item:hover{
   width:220px;
 }
 .dropdown-link{
-    padding:1rem 2rem;
+    padding:0.5rem 2rem;
     text-decoration: none;
     font-size:1.2rem;
     color:gray;

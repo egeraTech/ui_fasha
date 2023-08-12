@@ -14,7 +14,7 @@
         <button class="dropbtn">Munyeshaka <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
             <div class="dropdown-content">
                 <router-link to="/newfund" class="dropdown-link">Start a new Fasha</router-link>
-                <router-link to="#" class="dropdown-link">Your Fundraiser</router-link>
+                <router-link to="/myfund" class="dropdown-link">Your Fundraiser</router-link>
                 <router-link to="/account" class="dropdown-link">Account Setting</router-link>
                 <router-link to="#" class="dropdown-link">Sign out</router-link>
             </div>

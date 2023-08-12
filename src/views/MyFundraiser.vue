@@ -14,7 +14,6 @@
                 <tr>
                     <td>Attending this school year</td>
                     <td>School</td>
-                    <td>Attending this school year</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
                     <td>Details</td>
@@ -24,7 +23,6 @@
                 <tr>
                     <td>Attending this school year</td>
                     <td>School</td>
-                    <td>Attending this school year</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
                     <td>Details</td>
@@ -34,7 +32,6 @@
                 <tr>
                     <td>Attending this school year</td>
                     <td>School</td>
-                    <td>Attending this school year</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
                     <td>Details</td>
@@ -44,7 +41,6 @@
                 <tr>
                     <td>Attending this school year</td>
                     <td>School</td>
-                    <td>Attending this school year</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
                     <td>Details</td>
@@ -54,7 +50,6 @@
                 <tr>
                     <td>Attending this school year</td>
                     <td>School</td>
-                    <td>Attending this school year</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
                     <td>Details</td>
@@ -74,3 +69,9 @@ export default {
     }
 }
 </script>
+<style scoped>
+.section1{
+    padding:12rem 3rem 4rem 10rem;
+    width:100%;
+}
+</style>

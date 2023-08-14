@@ -18,7 +18,7 @@
                     <td>School</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
-                    <td>Details</td>
+                    <td><router-link to="/details">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>
@@ -28,7 +28,7 @@
                     <td>School</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
-                    <td>Details</td>
+                    <td><router-link to="/details">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>
@@ -38,7 +38,7 @@
                     <td>School</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
-                    <td>Details</td>
+                    <td><router-link to="/details">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>
@@ -48,7 +48,7 @@
                     <td>School</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
-                    <td>Details</td>
+                    <td><router-link to="/details">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>
@@ -58,7 +58,7 @@
                     <td>School</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
-                    <td>Details</td>
+                    <td><router-link to="/details">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>

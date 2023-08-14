@@ -6,6 +6,7 @@ import Signin from '../views/credentials/signin.vue'
 import AccountView from '../views/AccountView.vue'
 import Fundraiser from '../views/Fundraiser.vue'
 import MyFundraiser from '../views/MyFundraiser.vue'
+import Details from '../views/DetailsFundraiser.vue'
 
 const routes = [
   { path: '/',name: 'home',component: HomeView},
@@ -23,6 +24,7 @@ const routes = [
   { path: '/account',name: 'accountview',component: AccountView},
   { path: '/newfund',name: 'Fundraiser',component: Fundraiser},
   { path: '/myfund',name: 'MyFundraiser',component: MyFundraiser},
+  { path: '/details',name: 'Details',component: Details},
 ]
 
 const router = createRouter({

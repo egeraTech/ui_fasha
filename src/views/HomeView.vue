@@ -40,7 +40,6 @@
       <h2 class="title-content">We are here to help the helpless</h2>
       <p class="txt-section">In a world often fraught with challenges and uncertainties, our unwavering mission stands clear: we are here to help the helpless. With hearts brimming with compassion and hands ready to extend support, we step forward to be a guiding light for those who find themselves in the shadows of adversity.</p> <br>
       <p class="txt-section">We stand united, driven by the profound belief that by helping the helpless, we not only elevate lives but also cultivate a spirit of compassion that ripples through communities and generations, creating a tapestry of support and care that binds us all together.</p>
-      <button class="btn-more">Know More</button>
     </div>
     <div class="content2">
       <img src="../assets/images/children.jpg" alt="Image non disponible" class="img1" loading="lazy">
@@ -271,26 +270,6 @@ padding:0.5rem 0;
   font-size:1.2rem;
   text-align: justify;
   color:#7e7c7c;
-}
-.btn-more{
-  padding:1rem 2rem;
-  font-size:1.5rem;
-  background:#e89abc;
-  color:#fff;
-  border:none;
-  border-radius:10px;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:30px;
-  cursor:pointer;
-  border:1px solid #e89abc;
-}
-.btn-more:hover{
-  color:#e89abc;
-  background:#f9f9f9;
-  transition:0.5s;
-  border:1px solid #e89abc;
 }
 .content2{
   margin:0 3rem 0 5rem;

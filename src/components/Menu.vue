@@ -86,7 +86,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem 3rem 2rem 9rem;
     z-index: 1000;
     position: fixed;
     box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.1);
@@ -147,7 +147,10 @@ nav .btn-item {
 
 /* ==================================MEDIA QUERRIE==================================== */
 @media (max-width: 768px){
-   header .logo {
+    header{
+        padding:2rem 1rem;
+    }
+    .logo {
         margin-left: 10px;
     }
     .mobile-menu-toggle {

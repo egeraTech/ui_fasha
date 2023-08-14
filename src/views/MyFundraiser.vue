@@ -9,6 +9,7 @@
                 <th>Category</th>
                 <th>Starting Goal</th>
                 <th>Donate For</th>
+                <th>Status</th>
                 <th colspan="3">Action</th>
             </thead>
             <tbody>
@@ -18,6 +19,7 @@
                     <td>School</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
+                    <td>Active</td>
                     <td><router-link to="/details">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>
@@ -28,6 +30,7 @@
                     <td>School</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
+                    <td>Active</td>
                     <td><router-link to="/details">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>
@@ -38,6 +41,7 @@
                     <td>School</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
+                    <td>Active</td>
                     <td><router-link to="/details">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>
@@ -48,6 +52,7 @@
                     <td>School</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
+                    <td>Active</td>
                     <td><router-link to="/details">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>
@@ -58,6 +63,7 @@
                     <td>School</td>
                     <td>1000$</td>
                     <td>Friends & Family</td>
+                    <td>Active</td>
                     <td><router-link to="/details">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>

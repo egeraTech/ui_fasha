@@ -78,4 +78,29 @@ footer{
   text-align:center;
   padding:1rem 0 0 0;
 }
+/* Media Queries */
+@media (max-width: 768px) {
+  footer{
+    padding: 3rem 2rem;
+  }
+
+  .contain-footer {
+    flex-direction: column;
+  }
+
+  .footer,
+  .footer1 {
+    max-width: none;
+    width: 100%;
+  }
+
+  .footer-title {
+    font-size: 1.8rem;
+  }
+
+  .title-foot {
+    font-size: 1.3rem;
+  }
+}
+
 </style>

@@ -1,4 +1,5 @@
 <template>
+<MenuLog/>
 <section class="section1">
     <h1 class="title">Account Setting</h1>
     <div class="tab">
@@ -80,14 +81,18 @@
     </section>
 </template>
 <script>
+import MenuLog from '@/components/MenuLog.vue'
 export default {
-   
+   name:'AccountView',
+   components:{
+    MenuLog
+   }
 }
 </script>
 <style scoped>
 .section1{
     width:100%;
-    padding:3rem 4rem 3rem 10rem;
+    padding:9rem 4rem 3rem 10rem;
     background:#f9f9f9;
 }
 .title{

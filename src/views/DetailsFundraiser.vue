@@ -18,7 +18,7 @@
                         <ul>
                             <li class="lii">Munyeshaka</li>
                             <li>Organizer</li>
-                            <li>Kigobe Sud</li>
+                            <li>munyeshaka@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -123,7 +123,7 @@ hr{
     border-radius:5px;
     position:fixed;
     left:1050px;
-    top:150px;
+    top:170px;
     z-index:1000;
     backdrop-filter: blur(4px);
 }

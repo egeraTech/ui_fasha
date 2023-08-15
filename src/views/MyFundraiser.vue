@@ -1,5 +1,5 @@
 <template>
-    <!-- <MenuLog/> -->
+    <MenuLog/>
     <section class="section1">
         <h1 class="title">Fundraising you've made so far</h1>
         <table>

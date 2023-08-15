@@ -156,4 +156,52 @@ hr{
     border:1px solid #e89acc;
     cursor: pointer;
 }
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .section1 {
+    padding: 10rem 1rem;
+    width:100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .img-box {
+    width: 100%;
+    margin: 0;
+  }
+hr{
+    width:auto;
+}
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .donate-box {
+    width: 100%;
+    height:auto;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-top: 2rem;
+  }
+
+  .goal {
+    padding: 1rem 1rem 0;
+  }
+
+  .btn {
+    flex-direction: column;
+    justify-content: center;
+    margin:1rem 0;
+  }
+
+  .btn-share,
+  .btn-done {
+    width: 95%;
+    margin: 0.5rem ;
+  }
+}
 </style>

@@ -183,4 +183,43 @@ export default {
     outline:none;
     color:#7e7c7c;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: #f9f9f9;
+}
+   .img-logo {
+   height:150px;
+    width:150px;
+    padding:2rem 0 1rem 1rem;
+  }
+
+    .aside{
+     width: 100%;
+     margin:auto;
+    height: auto;
+}
+.title-aside{
+    font-size:1.5rem;
+}
+.title-pri {
+    font-size: 2rem;
+    color: #afadad;
+    margin-bottom: 1rem;
+}
+
+   .login-form{
+    width:100%;
+    height:auto;
+    margin-bottom:3rem;
+    padding:1rem;
+    background:#fff;
+    border-radius:50px;
+    box-shadow: 0px 0px 10px 0px #aaa;
+}
+}
 </style>

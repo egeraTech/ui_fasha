@@ -9,14 +9,13 @@
       <h2 class="title-content">We are here to help the helpless</h2>
       <p class="txt-section">In a world often fraught with challenges and uncertainties, our unwavering mission stands clear: we are here to help the helpless. With hearts brimming with compassion and hands ready to extend support, we step forward to be a guiding light for those who find themselves in the shadows of adversity.</p> <br>
       <p class="txt-section">We stand united, driven by the profound belief that by helping the helpless, we not only elevate lives but also cultivate a spirit of compassion that ripples through communities and generations, creating a tapestry of support and care that binds us all together.</p>
-      <button class="btn-more">Know More</button>
     </div>
     <div class="content2">
       <img src="../assets/images/children.jpg" alt="Image non disponible" class="img1">
     </div>
   </div>
   </section>
-  <section class="section3">
+ <section class="section3">
       <div class="container1">
     <div class="ttle-contain">
       <h5 class="h5-contain">Make your impact</h5>
@@ -41,7 +40,7 @@
     </div>
   </div>
   </section>
-  <section class="section4">
+   <section class="section4">
      <div class="donation">
     <div class="count">
       <h2 class="title-count">6000+</h2>
@@ -108,32 +107,11 @@ export default {
   text-align: justify;
   color:#7e7c7c;
 }
-.btn-more{
-  padding:1rem 2rem;
-  font-size:1.5rem;
-  background:#e89abc;
-  color:#fff;
-  border:none;
-  border-radius:10px;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:30px;
-  cursor:pointer;
-  border:1px solid #e89abc;
-}
-.btn-more:hover{
-  color:#e89abc;
-  background:#f9f9f9;
-  transition:0.5s;
-  border:1px solid #e89abc;
-}
+
 .content2{
   margin:0 10rem 0 5rem;
   padding:1rem;
   width:30rem;
-  /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
-   /* background:#e89abc; */
 }
 .img1{
   height:500px;
@@ -178,7 +156,6 @@ export default {
   transition:1s;
 }
 .call-box i{
-  /* font-size:100px; */
   display:flex;
   align-items:center;
   justify-content: center;
@@ -232,7 +209,6 @@ export default {
   padding:7rem 5rem 7rem 10rem;
   background-image: url("../assets/images/mon.jpg");
   background-size: 100%;
-  /* background-attachment: fixed; */
   background-position:bottom;
 }
 .title-count{
@@ -244,5 +220,97 @@ export default {
   font-size:1rem;
   font-weight:600;
   color:#fff;
+}
+
+/* ==================================MEDIA QUERIE=================================== */
+
+@media (max-width: 768px) {
+  .section1{
+  height:400px;
+  width:auto;
+  background-attachment: scroll;
+  background-size: center;
+}
+/* =========================SECTION 2================= */
+  .section2 {
+    padding: 3rem 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content1,
+  .content2 {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .img1 {
+    height: auto;
+    width: 100%;
+    clip-path: none;
+  }
+  /* ========================SECTION 3======================= */
+  .section3 {
+    padding: 3rem 2rem;
+  }
+
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .call {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .call-box {
+    width: 100%;
+    padding:1rem 5rem;
+    margin: 1rem 0;
+    border-radius:5px;
+box-shadow: 0px 0px 5px 0px #aaa;
+  }
+  .call-title {
+    padding: 1.5rem 0;
+  }
+  /* ====================SECTION 4======================= */
+  .section4 {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.donation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background-image: url("../assets/images/mon.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.count {
+  flex: 0 0 calc(50% - 2rem);
+  margin: 1rem;
+  text-align: center;
+}
+
+.title-count {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.p-count {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
 }
 </style>

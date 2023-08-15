@@ -111,7 +111,7 @@ header .logo {
 .mobile-menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: gray;
+    background-color: #fff;
     margin: 3px 0;
 }
 

@@ -518,9 +518,10 @@ padding:0.5rem 0;
   background-position: center;
   background-size: cover; /* Changed background-size to cover */
   background-repeat: no-repeat;
+  height:650px;
 }
 .content{
-  text-align: center;
+  text-align: justify;
 }
 .title {
   font-size: 2rem; /* Reduced font size for smaller screens */

@@ -1,9 +1,9 @@
 <template>
-    <MenuLog/>
+    <!-- <MenuLog/> -->
     <section class="section1">
 
     </section>
-    <section class="section2">
+     <section class="section2">
         <h1 class="title-principal">How it works</h1>
         <div class="container">
             <div class="contain1">
@@ -20,7 +20,7 @@
             </div>
         </div>
     </section>
-    <section class="section3">
+   <section class="section3">
         <div class="container">
             <div class="contain3">
                 <img src="../assets/images/flag.svg" alt="image non disponible" class="img-contain">
@@ -34,6 +34,22 @@
             <div class="contain1">
                 <h2 class="title-contain">Start with the basics</h2>
                 <p class="txt-contain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptas perspiciatis! Sunt, corporis nemo? Ducimus, quasi! Delectus iure dolorem aut architecto, a, vel tempore dolorum quia voluptates modi doloremque minus!</p>
+            </div>
+        </div>
+    </section>
+    <section class="sectionsample">
+        <div class="container">
+            <div class="contain1">
+                <h2 class="title-contain">Start with the basics</h2>
+                <p class="txt-contain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptas perspiciatis! Sunt, corporis nemo? Ducimus, quasi! Delectus iure dolorem aut architecto, a, vel tempore dolorum quia voluptates modi doloremque minus!</p>
+            </div>
+            <div class="contain2">
+                <h2 class="step">Step</h2>
+                <span>02</span>
+                <img src="../assets/images/line1.png" alt="image non disponible" class="line">
+            </div>
+            <div class="contain3">
+                <img src="../assets/images/flag.svg" alt="image non disponible" class="img-contain">
             </div>
         </div>
     </section>
@@ -53,7 +69,7 @@
             </div>
         </div>
     </section>
-    <section class="section5">
+     <section class="section5">
         <div class="container">
             <div class="contain3">
                 <img src="../assets/images/speak.svg" alt="image non disponible" class="img-contain">
@@ -67,6 +83,24 @@
             <div class="contain1">
                 <h2 class="title-contain">Share with everyone</h2>
                 <p class="txt-contain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptas perspiciatis! Sunt, corporis nemo? Ducimus, quasi! Delectus iure dolorem aut architecto, a, vel tempore dolorum quia voluptates modi doloremque minus!</p>
+            </div>
+        </div>
+    </section> 
+    <section class="section5sample">
+        <div class="container">
+            <div class="contain1">
+                <h2 class="title-contain">Share with everyone</h2>
+                <p class="txt-contain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptas perspiciatis! Sunt, corporis nemo? Ducimus, quasi! Delectus iure dolorem aut architecto, a, vel tempore dolorum quia voluptates modi doloremque minus!</p>
+            </div>
+            
+            <div class="contain2">
+                <h2 class="step">Step</h2>
+                <span>04</span>
+                <img src="../assets/images/line3.png" alt="image non disponible" class="line">
+            </div>
+            
+            <div class="contain3">
+                <img src="../assets/images/speak.svg" alt="image non disponible" class="img-contain">
             </div>
         </div>
     </section>
@@ -159,6 +193,9 @@ export default {
     width:100%;
     padding:3rem 4rem 3rem 10rem;
 }
+.sectionsample{
+    display:none;
+}
 /* ========================================================================== */
 .section4{
     width:100%;
@@ -168,5 +205,63 @@ export default {
 .section5{
     width:100%;
     padding:3rem 4rem 3rem 10rem;
+}
+.section5sample{
+    display:none;
+}
+/* =============================MEDIA QUERRIE================================= */
+@media (max-width: 768px){
+    .section1{
+        width:auto;
+    }
+    /* ===============================SECTION 2============================ */
+        .section2 {
+        padding: 1rem;
+    }
+
+    .title-principal {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+    .line{
+        display:none;
+    }
+   .contain1{
+    width:auto;
+   }
+    .contain2 span {
+        font-size: 2.5rem;
+        text-align:center;
+    }
+    .contain3{
+        display:block;
+        margin:1rem auto;
+    }
+    .img-contain{
+        margin-left:130px;
+        padding:1rem;
+    }
+    /* ===================================SECTION 3========================== */
+    .section3{
+        display:none;
+    }
+    .sectionsample{
+        display:block;
+        width:auto;
+    }
+    /* ===================================SECTION 4======================== */
+    .section4{
+        padding:1rem;
+    }
+    /* ===============================SECTION 5======================= */
+    .section5sample{
+        display:block;
+    }
+    .section5{
+        display: none;
+    }
 }
 </style>

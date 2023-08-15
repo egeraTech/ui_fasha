@@ -188,4 +188,25 @@ transition:0.5s;
     box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.75);
     margin:2rem  0 0 0;
 }
+/* Additional styles for mobile responsiveness */
+@media (max-width: 768px) {
+  .section1 {
+    padding: 3rem 1rem;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo, .info {
+    width: 100%;
+    text-align: center;
+  }
+  .img-profile{
+    height:350px;
+    width:350px;
+  }
+  .input, .save {
+    width: 100%;
+  }
+}
 </style>

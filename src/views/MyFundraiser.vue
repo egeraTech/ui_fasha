@@ -1,5 +1,5 @@
 <template>
-    <MenuLog/>
+    <!-- <MenuLog/> -->
     <section class="section1">
         <h1 class="title">Fundraising you've made so far</h1>
         <table>
@@ -124,5 +124,53 @@ thead th{
 tbody td{
     padding:0.5rem 0.5rem;
     color:#afaaad;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .section1 {
+        padding: 1rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    table, th, td {
+        font-size: 0.9rem;
+    }
+    
+    .table-wrapper {
+        overflow-x: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    thead, tbody, tr, td, th {
+        display: block;
+    }
+    
+    thead {
+        width: calc(100% + 17px);
+    }
+    
+    tr {
+        margin-bottom: 0.625rem;
+    }
+    
+    th, td {
+        padding: 0.25rem 0;
+    }
+    
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
 }
 </style>

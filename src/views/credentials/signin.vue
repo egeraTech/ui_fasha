@@ -64,9 +64,10 @@ export default {
 .login-form{
     width:900px;
     height:650px;
+    margin-bottom:3rem;
     background:#fff;
     border-radius:50px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px #aaa;
 }
 .link{
     padding:3rem 2rem 4rem 35rem;
@@ -136,4 +137,57 @@ export default {
     border:1px solid #afadad;
 }
 
+/* ==============media querries======================= */
+@media (max-width: 768px) {
+  .container {
+    display:flex;
+    flex-direction: column;
+    padding:1rem;
+  }
+  .img-logo{
+    height:150px;
+    width:150px;
+    padding:2rem 0 1rem 1rem;
+  }
+  .aside{
+   width: 100%;
+    height: auto;
+  }
+  .login-form{
+    width:100%;
+    max-width:900px;
+    margin-top:1rem;
+    height:auto;
+  }
+  .link{
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .signup{
+    text-decoration: underline;
+  }
+  .name{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+  }
+  .input1{
+    width:100%;
+  }
+  .form-input{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+  .input{
+    width:100%;
+  }
+  .forget{
+    text-align:center;
+  }
+  .btn-sign{
+    width:100%;
+    margin-top:1rem;
+  }
+}
 </style>

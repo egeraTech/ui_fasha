@@ -1,5 +1,5 @@
 <template>
-    <!-- <MenuLog/> -->
+    <MenuLog/>
     <section class="section1">
 
     </section>

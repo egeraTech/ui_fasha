@@ -126,4 +126,54 @@ export default {
     color:#e89acc;
     transition:0.5s;
 }
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .aside {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-logo {
+   height:150px;
+    width:150px;
+    padding:2rem 0 1rem 1rem;
+  }
+
+  
+
+  .login-form {
+    width: 100%;
+    margin-bottom:3rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px #aaa;
+  }
+
+  .link {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .form {
+    padding: 2rem 1rem;
+  }
+
+  .title-form {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .click {
+    padding: 1rem 0 0 0;
+    text-align: center;
+  }
+}
 </style>

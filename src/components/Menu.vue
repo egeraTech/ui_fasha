@@ -12,6 +12,7 @@
         <router-link to="/" class="nav-item">Home</router-link>
         <router-link to="/about" class="nav-item">About</router-link>
         <router-link to="/howitwork" class="nav-item">How It Works</router-link>
+        <router-link to="/allfund" class="nav-item">All Fundraiser</router-link>
         <router-link to="/signin" class="nav-item">Sign In</router-link>
         <router-link to="/newfund" class="btn-item">START FASHA</router-link>
     </nav>

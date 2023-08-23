@@ -110,12 +110,14 @@
 import Menu from '@/components/Menu.vue'
 import Footer from '@/components/Footer.vue'
 import MenuLog from '@/components/MenuLog.vue'
+// import Menuu from '@/components/Menuu.vue'
 export default {
   name:'Howitwork',
   components:{
     Menu,
     MenuLog,
-    Footer
+    Footer,
+    // Menuu
   }
 }
 </script>

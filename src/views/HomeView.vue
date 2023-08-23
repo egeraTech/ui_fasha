@@ -73,6 +73,7 @@
     </div>
     </div>
    </div>
+   <router-link to="/allfund" class="btn-more">More</router-link>
  </section>
  <section class="section5">
   <div class="container1">
@@ -275,13 +276,12 @@ padding:0.5rem 0;
   width:50rem;
   overflow:hidden;
   cursor:pointer;
-  
 }
 .img1{
   transition:transform 0.5s;
   height:500px;
   width:500px;
-  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+ clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 .content2:hover .img1{
   transform:scale(1.1);
@@ -340,6 +340,23 @@ padding:0.5rem 0;
 }
 .btn-fund:hover{
   background:#e89abc;
+  color:#fff;
+  transition:0.5s;
+}
+.btn-more{
+   padding:1rem 2rem;
+  font-size:1rem;
+  border:none;
+  background:#e89abc;
+  border-radius:5px;
+  color:#fff;
+  cursor:pointer;
+  font-weight:600;
+  display: block;
+  margin:0 auto;
+}
+.btn-more:hover{
+  background:#d1b7c2;
   color:#fff;
   transition:0.5s;
 }

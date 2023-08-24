@@ -73,7 +73,7 @@
     </div>
     </div>
    </div>
-   <router-link to="/allfund" class="btn-more">More</router-link>
+   <button class="btn-more"><router-link to="/allfund" class="btn-route"> More </router-link></button>
  </section>
  <section class="section5">
   <div class="container1">
@@ -344,7 +344,7 @@ padding:0.5rem 0;
   transition:0.5s;
 }
 .btn-more{
-   padding:1rem 2rem;
+   padding:1rem 1rem;
   font-size:1rem;
   border:none;
   background:#e89abc;
@@ -359,6 +359,11 @@ padding:0.5rem 0;
   background:#d1b7c2;
   color:#fff;
   transition:0.5s;
+}
+.btn-route{
+  text-decoration: none;
+  color:#fff;
+  padding:1rem 2rem;
 }
 /* ============================================================================= */
 .section5{

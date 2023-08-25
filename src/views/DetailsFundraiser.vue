@@ -30,7 +30,7 @@
 
                 <div class="btn">
                     <button class="btn-share">Share</button>
-                    <button class="btn-done"><router-link to="/donate">Donate Now</router-link></button>
+                    <button class="btn-done"><router-link to="/donate" class="btn">Donate Now</router-link></button>
                 </div>
             </div>
         </div>
@@ -154,6 +154,15 @@ hr{
     background:#e89acc;
     color:#fff;
     border:1px solid #e89acc;
+    cursor: pointer;
+}
+.btn-done .btn{
+    padding:0.5rem 0;
+    border-radius:inherit;
+    text-decoration:none;
+    font-size:1.2rem;
+    background:#e89acc;
+    color:#fff;
     cursor: pointer;
 }
 /* Adjustments for smaller screens */

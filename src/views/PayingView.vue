@@ -147,4 +147,35 @@ label {
     background:#dab1cb;
     transition:0.5s;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .section1{
+        padding:10rem 0;
+    }
+    .form-container {
+        margin: 3rem 5%;
+    }
+
+    .img-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-donate {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        margin: 1rem 0;
+        text-align: center;
+        font-size:1.2rem;
+    }
+
+    .input1 {
+        margin-bottom: 1rem;
+    }
+}
 </style>

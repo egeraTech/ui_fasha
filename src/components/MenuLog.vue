@@ -7,7 +7,7 @@
         <router-link to="/" class="nav-item">Home</router-link>
         <router-link to="/about" class="nav-item">About</router-link>
         <router-link to="/howitwork" class="nav-item">How It works</router-link>
-        <!-- <router-link to="#" class="nav-item">Contact</router-link> -->
+        <router-link to="allfund" class="nav-item">Fundraiser</router-link>
         <!-- <router-link to="/signin" class="nav-item">Sign In</router-link> -->
         <!-- <router-link to="/account" class="nav-item">Account</router-link> -->
         <div class="dropdown">

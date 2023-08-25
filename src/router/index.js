@@ -8,6 +8,7 @@ import Fundraiser from '../views/Fundraiser.vue'
 import MyFundraiser from '../views/MyFundraiser.vue'
 import Details from '../views/DetailsFundraiser.vue'
 import AllFundraiser from '../views/AllFundraiser.vue'
+import Donate from '../views/PayingView'
 
 const routes = [
   { path: '/',name: 'home',component: HomeView},
@@ -27,6 +28,7 @@ const routes = [
   { path: '/myfund',name: 'MyFundraiser',component: MyFundraiser},
   { path: '/details',name: 'Details',component: Details},
   { path: '/allfund',name: 'AllFundraiser',component: AllFundraiser},
+  { path: '/donate',name: 'donate',component: Donate},
 ]
 
 const router = createRouter({

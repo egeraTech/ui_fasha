@@ -30,7 +30,7 @@
 
                 <div class="btn">
                     <button class="btn-share">Share</button>
-                    <button class="btn-done">Donate Now</button>
+                    <button class="btn-done"><router-link to="/donate">Donate Now</router-link></button>
                 </div>
             </div>
         </div>

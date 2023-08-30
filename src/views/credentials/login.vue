@@ -10,10 +10,10 @@
             <div class="form">
                 <h3 class="title-form">Your account details</h3>
                 <div class="form-input">
-                    <input type="text" placeholder="Email adress..." class="input" >
-                    <input type="password" placeholder="Password..." class="input">
+                    <input type="text" placeholder="Username..." class="input" v-model="form.username" >
+                    <input type="password" placeholder="Password..." class="input" v-model="form.password">
                     <span><a href="#" class="forget">Forgot your password ?</a></span>
-                    <button class="btn-sign">Sign in</button>
+                    <button class="btn-sign" @click="onLogin">Sign in</button>
                 </div>
                 <p class="click">By Clicking to sign in, you agree to the Fasha <a href="#" class="cookies">Terms</a> and <a href="#" class="cookies">Privacy notice</a></p>
                 
@@ -22,8 +22,36 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
     name:'login',
+    data(){
+        return{
+            form:{
+                username:'',
+                password:''
+            }
+        }
+    },
+    methods:{
+        onLogin(){
+            axios
+            .post('/login/',{
+                username:this.username,
+                password:this.password
+            })
+            .then((response)=>{
+                this.$store.commit('login',response.data);
+                localStorage.setItem('user', JSON.stringify(response.data));
+                alert('Good!')
+                this.$router.push('/myfund')
+            })
+            .catch((error)=>{
+                console.log(error);
+                this.errorMessage='Invalid username or password';
+            })
+        }
+    }
 
 }
 </script>

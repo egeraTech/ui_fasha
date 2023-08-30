@@ -21,7 +21,7 @@
                         <option value="Kenya">Kenya</option>
                     </select>
                     <label>Categorie for your fundraising</label>
-                    <select >
+                    <select v-model="form.category">
                         <option selected>--Categorie--</option>
                         <option value="Event">Event</option>
                         <option value="Business">Business</option>
@@ -37,14 +37,14 @@
                 <div v-if="currentStep === 2" class="steps">
                     <h2 class="title-step">Step 2</h2>
                     <label>Who are you fundraising for?</label>
-                    <select >
+                    <select v-model="form.uwufashwa">
                         <option selected>--Donate for--</option>
                         <option value="myself">Yourself</option>
                         <option value="friend">Friend or Family</option>
                         <option value="charity">Charity</option>
                     </select>
                     <label>Your starting goal</label>
-                    <input type="number" class="input" placeholder="Starting goal...">
+                    <input type="number" class="input" placeholder="Starting goal..." v-model="form.ayakenewe">
                     <div class="btn-action">
                         <button @click="prevStep">Previous</button>
                          <button @click="nextStep">Next</button>
@@ -54,14 +54,15 @@
                 <div v-if="currentStep === 3" class="steps">
                     <h2 class="title-step">Step 3</h2>
                     <label>Add a picture</label>
-                    <input type="file" class="input">
+                    <!-- <input type="file" class="input" v-model="form.photo"> -->
+                    <input type="file" ref="fileInput" v-on:change="handleFileUpload">
                     <label>Title of your fundraising</label>
-                    <input type="text" class="input" placeholder="Title...">
+                    <input type="text" class="input" placeholder="Title..." v-model="form.title">
                     <label>Tell your Story</label>
-                    <textarea  placeholder="Details..." class="text"></textarea>
+                    <textarea  placeholder="Details..." class="text" v-model="form.story"></textarea>
                     <div class="btn-action">
                         <button @click="prevStep">Previous</button>
-                        <button type="submit">Complete Fundraising</button>
+                        <button >Complete Fundraising</button>
                     </div>
                     
                 </div>
@@ -71,11 +72,20 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
     name:'login',
     data(){
         return{
             currentStep:1,
+            form:{
+                category:'',
+                uwufashwa:'',
+                ayakenewe:null,
+                photo:null,
+                title:'',
+                story:''
+            }
         }
     },
     methods:{
@@ -84,7 +94,16 @@ export default {
         },
         prevStep(){
             this.currentStep--;
-        }
+        }, 
+       
+    submitForm(){
+        axios
+        .post('/fasha/',this.form)
+        .then(res=>{
+            console.log(res.data)
+        })
+    }
+        
     }
 
 }

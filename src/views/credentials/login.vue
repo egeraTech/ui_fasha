@@ -15,14 +15,18 @@
                     <span><a href="#" class="forget">Forgot your password ?</a></span>
                     <button class="btn-sign" @click="onLogin">Sign in</button>
                 </div>
+                <p v-if="errorMessage">{{ errorMessage }}</p>
+
                 <p class="click">By Clicking to sign in, you agree to the Fasha <a href="#" class="cookies">Terms</a> and <a href="#" class="cookies">Privacy notice</a></p>
                 
             </div>
         </div>
+
     </div>
 </template>
 <script>
-import axios from 'axios'
+import axios from 'axios';
+
 export default {
     name:'login',
     data(){
@@ -30,27 +34,25 @@ export default {
             form:{
                 username:'',
                 password:''
-            }
+            },
+            errorMessage: ''
         }
     },
     methods:{
         onLogin(){
-            axios
-            .post('/login/',{
-                username:this.username,
-                password:this.password
-            })
+            axios.post('/login/', this.form)
             .then((response)=>{
+                console.log(this.form)
                 this.$store.commit('login',response.data);
                 localStorage.setItem('user', JSON.stringify(response.data));
-                alert('Good!')
+                alert('Kaze!')
                 this.$router.push('/myfund')
             })
             .catch((error)=>{
                 console.log(error);
                 this.errorMessage='Invalid username or password';
             })
-        }
+        },
     }
 
 }

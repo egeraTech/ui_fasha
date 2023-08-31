@@ -8,7 +8,7 @@ export default{
         getHeaders(){
             return{
                 headers:{
-                    'Authorization':'Bearer ' + this.user.access
+                    'Authorization': 'Bearer ' + this.user.access
                 }
             }
         }

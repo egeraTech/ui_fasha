@@ -12,7 +12,7 @@
                 <div class="form-input">
                     <div class="name">
                         <input type="text" placeholder="Firstname..." class="input1" >
-                         <input type="text" placeholder="Lastname..." class="input1">
+                        <input type="text" placeholder="Lastname..." class="input1">
                     </div>
                     <input type="text" placeholder="Email adress..." class="input" >
                     <input type="password" placeholder="Password..." class="input">

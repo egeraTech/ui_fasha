@@ -7,77 +7,64 @@
                 <th>#</th>
                 <th>Title</th>
                 <th>Category</th>
-                <th>Starting Goal</th>
-                <th>Donate For</th>
+                <th>Ayakenewe</th>
+                <th>Uwufashwa</th>
                 <th>Status</th>
                 <th colspan="3">Action</th>
+                <!-- <p>{{ this.$store.state.Myfundraiser }}</p> -->
             </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Attending this school year</td>
-                    <td>School</td>
-                    <td>1000$</td>
-                    <td>Friends & Family</td>
+            <!-- <tbody v-if="Myfundraiser > 0"> -->
+                <tbody>
+                <tr v-for="myfund in this.$store.state.Myfundraiser" :key="myfund.id">
+                    <td>{{myfund.id}}</td>
+                    <td>{{myfund.title}}</td>
+                    <td>{{ myfund.category }}</td>
+                    <td>{{myfund.ayakenewe}}</td>
+                    <td>{{ myfund.uwufashwa }}</td>
                     <td>Active</td>
-                    <td><router-link to="/details">Details</router-link></td>
+                    <td><router-link :to="`/fashaDetails/${myfund.id}`">Details</router-link></td>
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Attending this school year</td>
-                    <td>School</td>
-                    <td>1000$</td>
-                    <td>Friends & Family</td>
-                    <td>Active</td>
-                    <td><router-link to="/details">Details</router-link></td>
-                    <td>Edit</td>
-                    <td>Delete</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Attending this school year</td>
-                    <td>School</td>
-                    <td>1000$</td>
-                    <td>Friends & Family</td>
-                    <td>Active</td>
-                    <td><router-link to="/details">Details</router-link></td>
-                    <td>Edit</td>
-                    <td>Delete</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Attending this school year</td>
-                    <td>School</td>
-                    <td>1000$</td>
-                    <td>Friends & Family</td>
-                    <td>Active</td>
-                    <td><router-link to="/details">Details</router-link></td>
-                    <td>Edit</td>
-                    <td>Delete</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Attending this school year</td>
-                    <td>School</td>
-                    <td>1000$</td>
-                    <td>Friends & Family</td>
-                    <td>Active</td>
-                    <td><router-link to="/details">Details</router-link></td>
-                    <td>Edit</td>
-                    <td>Delete</td>
-                </tr>
+                <p>{{this.$route.params.id}}</p>
             </tbody>
+            <!-- <tbody else>
+                <tr>
+                    <td colspan="9">Ntaco twashoboye gutora!</td>
+                </tr>
+            </tbody> -->
         </table>
     </section>
 </template>
 <script>
 import MenuLog from '@/components/MenuLog.vue'
+import axios from 'axios'
 export default {
     name:'MyFundraiser',
     components:{
         MenuLog
+    },
+    data(){
+        return{
+            // Myfundraiser: this.$store.state.Myfundraiser
+        
+        }
+    },
+    methods:{
+        getMyfundraiser(){
+            axios
+            .get('/fasha/',this.getHeaders())
+            .then((response)=>{
+                this.$store.state.Myfundraiser=response.data.results
+            })
+        },
+        // details(item){
+        //     this.$store.state.Myfundraiser=item
+        //     this.$router.push('/fashaDetails')
+        // }
+    },
+    mounted(){
+        this.getMyfundraiser()
     }
 }
 </script>

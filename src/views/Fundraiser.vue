@@ -8,7 +8,8 @@
         </div>
         <div class="login-form">
               <div class="form">
-                <form @submit.prevent="submitForm">
+                <!-- <form @submit.prevent="submitForm"> -->
+                    <form>
                 <div v-if="currentStep === 1" class="steps">
                     <h2 class="title-step">Step 1</h2>
                     <label>Your Location</label>
@@ -62,7 +63,7 @@
                     <textarea  placeholder="Details..." class="text" v-model="form.story"></textarea>
                     <div class="btn-action">
                         <button @click="prevStep">Previous</button>
-                        <button >Complete Fundraising</button>
+                        <button @click="submitForm">Complete Fundraising</button>
                     </div>
                     
                 </div>
@@ -100,7 +101,11 @@ export default {
         axios
         .post('/fasha/',this.form)
         .then(res=>{
-            console.log(res.data)
+            console.log(res)
+            alert('Ivyo mwakoze vyakunze!')
+        })
+        .catch((error)=>{
+            console.log(error)
         })
     }
         

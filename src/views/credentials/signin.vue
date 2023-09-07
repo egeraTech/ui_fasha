@@ -11,14 +11,14 @@
                 <h3 class="title-form">Your account details</h3>
                 <div class="form-input">
                     <div class="name">
-                        <input type="text" placeholder="Firstname..." class="input1" >
-                        <input type="text" placeholder="Lastname..." class="input1">
+                        <input type="text" placeholder="Firstname..." class="input1" v-model="form.firstname">
+                        <input type="text" placeholder="Lastname..." class="input1" v-model="form.lastname">
                     </div>
-                    <input type="text" placeholder="Email adress..." class="input" >
-                    <input type="password" placeholder="Password..." class="input">
-                    <input type="password" placeholder="Confirm Password..." class="input">
+                    <input type="text" placeholder="Username..." class="input" v-model="form.username">
+                    <input type="email" placeholder="Email..." class="input" v-model="form.email">
+                    <input type="password" placeholder="Confirm Password..." class="input" v-model="form.password">
                     <span><a href="#" class="forget">Forgot your password ?</a></span>
-                    <button class="btn-sign">Sign Up</button>
+                    <button class="btn-sign" @click="onSignup">Sign Up</button>
                 </div>
                 
                 
@@ -27,8 +27,34 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
     name:'login',
+    data(){
+        return{
+            form:{
+                firstname:'',
+                lastname:'',
+                email:'',
+                username:'',
+                role:'user',
+                password:'',
+            }
+        }
+    },
+    methods:{
+        onSignup(){
+            axios
+            .post('/signup/',this.form)
+            .then((response)=>{
+                console.log(response)
+                alert('Ikonti yawe yakunze!')
+            })
+            .catch((error)=>{
+                console.log(error)
+            })
+        }
+    }
 
 }
 </script>

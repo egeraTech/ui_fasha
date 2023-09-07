@@ -8,6 +8,18 @@
   </div>
   
  </section>
+ <section class="section3">
+  <div class="container">
+    <div class="content1">
+      <h2 class="title-content">We are here to help the helpless</h2>
+      <p class="txt-section">In a world often fraught with challenges and uncertainties, our unwavering mission stands clear: we are here to help the helpless. With hearts brimming with compassion and hands ready to extend support, we step forward to be a guiding light for those who find themselves in the shadows of adversity.</p> <br>
+      <p class="txt-section">We stand united, driven by the profound belief that by helping the helpless, we not only elevate lives but also cultivate a spirit of compassion that ripples through communities and generations, creating a tapestry of support and care that binds us all together.</p>
+    </div>
+    <div class="content2">
+      <img src="../assets/images/children.jpg" alt="Image non disponible" class="img1" loading="lazy">
+    </div>
+  </div>
+ </section>
   <section class="section2">
   <h2 class="title-section">We are in the mission to help the helpless</h2>
   <div class="boxes">
@@ -30,18 +42,6 @@
       <img src="../assets/images/speak.svg" alt="image non disponible" class="imgi">
       <h3 class="title-box">Share with everyone</h3>
       <p class="txt-box">Sharing is caring, and your support is invaluable in helping us reach our fundraising goal.</p>
-    </div>
-  </div>
- </section>
- <section class="section3">
-  <div class="container">
-    <div class="content1">
-      <h2 class="title-content">We are here to help the helpless</h2>
-      <p class="txt-section">In a world often fraught with challenges and uncertainties, our unwavering mission stands clear: we are here to help the helpless. With hearts brimming with compassion and hands ready to extend support, we step forward to be a guiding light for those who find themselves in the shadows of adversity.</p> <br>
-      <p class="txt-section">We stand united, driven by the profound belief that by helping the helpless, we not only elevate lives but also cultivate a spirit of compassion that ripples through communities and generations, creating a tapestry of support and care that binds us all together.</p>
-    </div>
-    <div class="content2">
-      <img src="../assets/images/children.jpg" alt="Image non disponible" class="img1" loading="lazy">
     </div>
   </div>
  </section>
@@ -75,6 +75,26 @@
    </div>
    <button class="btn-more"><router-link to="/allfund" class="btn-route"> More </router-link></button>
  </section>
+ <section class="section6">
+  <div class="donation">
+    <div class="count">
+      <h2 class="title-count">6000+</h2>
+      <p class="p-count">Donation</p>
+    </div>
+    <div class="count">
+      <h2 class="title-count">80+</h2>
+      <p class="p-count">Fund Raised</p>
+    </div>
+    <div class="count">
+      <h2 class="title-count">245+</h2>
+      <p class="p-count">Volunteers</p>
+    </div>
+    <div class="count">
+      <h2 class="title-count">605+</h2>
+      <p class="p-count">Project</p>
+    </div>
+  </div>
+ </section>
  <section class="section5">
   <div class="container1">
     <div class="ttle-contain">
@@ -97,26 +117,6 @@
         <h3 class="call-title">Charity</h3>
         <a href="#" class="go-action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
       </div>
-    </div>
-  </div>
- </section>
- <section class="section6">
-  <div class="donation">
-    <div class="count">
-      <h2 class="title-count">6000+</h2>
-      <p class="p-count">Donation</p>
-    </div>
-    <div class="count">
-      <h2 class="title-count">80+</h2>
-      <p class="p-count">Fund Raised</p>
-    </div>
-    <div class="count">
-      <h2 class="title-count">245+</h2>
-      <p class="p-count">Volunteers</p>
-    </div>
-    <div class="count">
-      <h2 class="title-count">605+</h2>
-      <p class="p-count">Project</p>
     </div>
   </div>
  </section>

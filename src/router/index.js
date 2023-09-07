@@ -6,7 +6,7 @@ import Signin from '../views/credentials/signin.vue'
 import AccountView from '../views/AccountView.vue'
 import Fundraiser from '../views/Fundraiser.vue'
 import MyFundraiser from '../views/MyFundraiser.vue'
-import Details from '../views/DetailsFundraiser.vue'
+import fashaDetails from '../views/DetailsFundraiser.vue'
 import AllFundraiser from '../views/AllFundraiser.vue'
 import Donate from '../views/PayingView'
 
@@ -26,7 +26,7 @@ const routes = [
   { path: '/account',name: 'accountview',component: AccountView},
   { path: '/newfund',name: 'Fundraiser',component: Fundraiser},
   { path: '/myfund',name: 'MyFundraiser',component: MyFundraiser},
-  { path: '/details',name: 'Details',component: Details},
+  { path: '/fashaDetails/:id',name: 'fashaDetails',component: fashaDetails},
   { path: '/allfund',name: 'AllFundraiser',component: AllFundraiser},
   { path: '/donate',name: 'donate',component: Donate},
 ]

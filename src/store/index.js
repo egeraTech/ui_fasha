@@ -9,6 +9,7 @@ const store = createStore({
         errorMessage: '',
         users: [], /// ALL
         fundraiser: [],
+        Myfundraiser:[],
     },
     mutations: {
         setUser(state, user) {

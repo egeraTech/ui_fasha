@@ -1,13 +1,13 @@
 <template>
 <Menu/>
-    <section class="section1">
-        <h1 class="title">Help me to attend in a conference in Malaysia</h1>
+    <section class="section1" >
+        <h1 class="title">{{ Myfundraiser.title }}</h1>
         <div class="container">
             <div class="img-box">
                 <img src="../assets/images/7.png" alt="image non disponible" class="img1">
-                <h4 class="fund"> Munyeshaka is organizing this fundraising</h4>
+                <h4 class="fund"> {{ Myfundraiser.user }} is organizing this fundraising</h4>
                 <hr>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe velit eius? Optio officia similique laborum aliquam accusantium eligendi tempore molestiae necessitatibus quisquam rerum, quidem dolores porro, consequuntur itaque ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque fuga quis alias, cupiditate impedit sit maxime a iste eos. Magnam aliquid odio assumenda vitae voluptatem minima commodi numquam sunt quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt molestias enim id soluta, quis delectus accusamus, vel hic veniam aperiam exercitationem optio? Sapiente asperiores maiores aliquam unde eius numquam laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut adipisci voluptatum nihil. Sequi asperiores quo modi, enim nisi recusandae accusantium eos ullam sit fugit et natus dolor in quisquam eligendi.</p>
+                <p class="description">{{Myfundraiser.story}}</p>
                 <hr>
                 <h3 class="sub-title">Organizer</h3>
                 <div class="sub-contain">
@@ -16,17 +16,17 @@
                     </div>
                     <div class="txt-contain">
                         <ul>
-                            <li class="lii">Munyeshaka</li>
+                            <li class="lii">{{ Myfundraiser.user }}</li>
                             <li>Organizer</li>
                             <li>munyeshaka@gmail.com</li>
                         </ul>
                     </div>
                 </div>
                 <hr>
-                <p class="created">Created July, 29th, 2023 <span><i class="fa fa-tag" aria-hidden="true"></i> Travel</span></p>
+                <p class="created">Created July, 29th, 2023 <span><i class="fa fa-tag" aria-hidden="true"></i> {{ Myfundraiser.category }}</span></p>
             </div>
             <div class="donate-box">
-                <h4 class="goal">$2,700 Goal</h4>
+                <h4 class="goal">{{ Myfundraiser.ayakenewe }} Goal</h4>
 
                 <div class="btn">
                     <button class="btn-share">Share</button>
@@ -40,11 +40,40 @@
 <script>
 import Menu from '@/components/Menu.vue'
 import Footer from '@/components/Footer.vue'
+import axios from 'axios'
 export default {
    name:'DetailsFundraiser',
    components:{
     Menu,
     Footer
+   },
+   data(){
+    return{
+        Myfundraiser:[]
+    }
+   },
+   methods:{
+    getDetailsMyfundraiser(){
+    const ID = this.$route.params.id
+    axios
+    .get('/fasha/'+ ID + '/',this.getHeaders)
+    .then((res)=>{
+        this.Myfundraiser=res.data
+        this.getUserConnected();
+    })
+   },
+   getUserConnected(){
+    const userID = this.Myfundraiser.id
+    axios
+    .get('/users/'+ userID + '/',this.getHeaders)
+    .then((res)=>{
+        this.Myfundraiser=res.data
+    })
+   }
+   },
+   
+   mounted(){
+    this.getDetailsMyfundraiser()
    }
 }
 </script>

@@ -12,7 +12,7 @@
         <router-link to="/" class="nav-item">Home</router-link>
         <router-link to="/about" class="nav-item">About</router-link>
         <router-link to="/howitwork" class="nav-item">How It Works</router-link>
-        <router-link to="/allfund" class="nav-item">Fundraisers</router-link>
+        <router-link to="/allfund" class="nav-item">Fundraiser</router-link>
         <router-link to="/signin" class="nav-item">Sign In</router-link>
         <router-link to="/newfund" class="btn-item">START FASHA</router-link>
     </nav>
@@ -87,7 +87,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 3rem 2rem 9rem;
+    padding: 1rem 3rem 1rem 9rem;
     z-index: 1000;
     position: fixed;
     box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.1);

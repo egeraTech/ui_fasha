@@ -1,5 +1,5 @@
 <template>
-    <MenuLog/>
+    <Menu/>
     <section class="section1">
 
     </section>
@@ -214,7 +214,10 @@ export default {
 /* =============================MEDIA QUERRIE================================= */
 @media (max-width: 768px){
     .section1{
-        width:auto;
+        width:100%;
+        height:600px;
+        background-size:cover;
+        background-attachment: fixed;
     }
     /* ===============================SECTION 2============================ */
         .section2 {
@@ -240,10 +243,15 @@ export default {
     }
     .contain3{
         display:block;
-        margin:1rem auto;
+        /* margin:1rem auto; */
+        margin-top:1rem;
+        width:100%;
     }
     .img-contain{
-        margin-left:130px;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        /* margin-left:130px; */
         padding:1rem;
     }
     /* ===================================SECTION 3========================== */
@@ -257,6 +265,7 @@ export default {
     /* ===================================SECTION 4======================== */
     .section4{
         padding:1rem;
+        width:auto;
     }
     /* ===============================SECTION 5======================= */
     .section5sample{

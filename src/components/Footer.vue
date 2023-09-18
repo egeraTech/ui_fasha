@@ -63,9 +63,10 @@ footer{
 }
 .desc{
   text-align:justify;
+  color:#f9f9f9;
 }
 .title-foot{
-  color: #f9f9f9;
+  color: #e89abc;
   font-size:1.8rem;
   padding-bottom:1rem;
 }
@@ -73,6 +74,7 @@ footer{
   list-style-type: none;
   padding:0.5rem 0 0.5rem 0;
   font-size:1rem;
+  color:#f9f9f9;
 }
 .line-desc{
   text-align:center;

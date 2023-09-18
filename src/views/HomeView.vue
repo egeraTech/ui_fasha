@@ -4,7 +4,7 @@
   <div class="content">
     <h1 class="title">Let's be Kind for <br><span>Everyone</span></h1>
   <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quos! Officiis veniam asperiores voluptatibus amet natus reprehenderit incidunt.</p>
-  <button class="btn-donate">DONATE NOW</button>
+  <button class="btn-donate" @click="Donate">DONATE NOW</button>
   </div>
   
  </section>
@@ -53,7 +53,7 @@
       <h3 class="ttle-fund">Help me Restoring my Jeep</h3>
       <div class="action">
         <h4 class="number-fund">1 Donation</h4>
-        <button class="btn-fund"><router-link class="route" to="/details">Donate Now</router-link></button>
+        <button class="btn-fund"><router-link class="route" :to="`/details`">Donate Now</router-link></button>
       </div>
     </div>
      <div class="grid-box">
@@ -105,17 +105,17 @@
       <div class="call-box">
         <img src="../assets/images/hands.svg" alt="image non disponible" class="img-box">
         <h3 class="call-title">Yourself</h3>
-        <a href="#" class="go-action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="/newfund" class="go-action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
       </div>
       <div class="call-box">
         <img src="../assets/images/friends.svg" alt="image non disponible" class="img-box">
         <h3 class="call-title">Friends & Family</h3>
-        <a href="#" class="go-action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="/newfund" class="go-action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
       </div>
       <div class="call-box">
         <img src="../assets/images/charity.svg" alt="image non disponible" class="img-box">
         <h3 class="call-title">Charity</h3>
-        <a href="#" class="go-action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="/newfund" class="go-action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
@@ -125,8 +125,8 @@
     <div class="contain-start1">
       <h1 class="title-start">Ready to get started? Join thousands of others today.</h1>
       <div class="btn-div">
-        <button class="btn-start">Start Donation</button>
-        <button class="btn-how">How It Works</button>
+        <button class="btn-start" @click="Donate">Start Donation</button>
+        <button class="btn-how" @click="Howitwork">How It Works</button>
       </div>
     </div>
     <div class="contain-start2">
@@ -146,6 +146,14 @@ export default {
   components: {
     Menu,
     Footer
+  },
+  methods:{
+    Donate(){
+      this.$router.push('/allfund')
+    },
+    Howitwork(){
+      this.$router.push('/howitwork')
+    }
   }
 }
 </script>
@@ -290,7 +298,7 @@ padding:0.5rem 0;
 .section4{
   width:100%;
   padding:3rem 4rem 5rem 10rem;
-  background:#f9f9f9;
+  background:#fff;
 }
 .title01{
   color:#e89abc;
@@ -480,7 +488,7 @@ padding:0.5rem 0;
 /* =============================================================================== */
 .section7{
   width:100%;
-  padding:4rem 3rem 4rem 10rem;
+  padding:4rem 4rem 4rem 10rem;
 }
 .container-start{
   display:flex;
@@ -534,6 +542,7 @@ padding:0.5rem 0;
 .img-contain{
   height:400px;
   width:400px;
+  filter:brightness(0.4);
 }
 /* ==================================MEDIA QUERRY====================================== */
 

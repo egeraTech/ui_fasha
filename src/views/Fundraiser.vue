@@ -98,7 +98,9 @@ export default {
         }, 
        
     submitForm(){
-        axios
+        const isUserConnected=this.$store.state.user
+        if(isUserConnected){
+            axios
         .post('/fasha/',this.form)
         .then(res=>{
             console.log(res)
@@ -107,6 +109,10 @@ export default {
         .catch((error)=>{
             console.log(error)
         })
+        }else{
+            this.$router.push('/signin')
+        }
+        
     }
         
     }

@@ -226,10 +226,13 @@ export default {
 
 @media (max-width: 768px) {
   .section1{
-  height:400px;
+  height:600px;
   width:auto;
-  background-attachment: scroll;
-  background-size: center;
+  background-attachment: fixed;
+  /* background-size: 100%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* =========================SECTION 2================= */
   .section2 {

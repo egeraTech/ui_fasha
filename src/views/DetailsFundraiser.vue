@@ -1,11 +1,11 @@
 <template>
 <Menu/>
     <section class="section1" >
-        <h1 class="title">{{ Myfundraiser.title }}</h1>
+        <h1 class="title">{{ Myfundraiser.title }} help me recovering my Jeep</h1>
         <div class="container">
             <div class="img-box">
                 <img src="../assets/images/7.png" alt="image non disponible" class="img1">
-                <h4 class="fund"> {{ Myfundraiser.user }} is organizing this fundraising</h4>
+                <h4 class="fund"> {{ Myfundraiser.user }}Munyeshaka is organizing this fundraising</h4>
                 <hr>
                 <p class="description">{{Myfundraiser.story}}</p>
                 <hr>
@@ -16,7 +16,7 @@
                     </div>
                     <div class="txt-contain">
                         <ul>
-                            <li class="lii">{{ Myfundraiser.user }}</li>
+                            <li class="lii">{{ Myfundraiser.user }} Munyeshaka</li>
                             <li>Organizer</li>
                             <li>munyeshaka@gmail.com</li>
                         </ul>
@@ -26,7 +26,7 @@
                 <p class="created">Created July, 29th, 2023 <span><i class="fa fa-tag" aria-hidden="true"></i> {{ Myfundraiser.category }}</span></p>
             </div>
             <div class="donate-box">
-                <h4 class="goal">{{ Myfundraiser.ayakenewe }} Goal</h4>
+                <h4 class="goal">{{ Myfundraiser.ayakenewe }}10000 Goal</h4>
 
                 <div class="btn">
                     <button class="btn-share">Share</button>

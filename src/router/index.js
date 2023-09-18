@@ -27,6 +27,7 @@ const routes = [
   { path: '/newfund',name: 'Fundraiser',component: Fundraiser},
   { path: '/myfund',name: 'MyFundraiser',component: MyFundraiser},
   { path: '/fashaDetails/:id',name: 'fashaDetails',component: fashaDetails},
+  { path: '/details',name: 'fashaDetails',component: fashaDetails},
   { path: '/allfund',name: 'AllFundraiser',component: AllFundraiser},
   { path: '/donate',name: 'donate',component: Donate},
 ]

@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <hr>
-                <p class="created">Created July, 29th, 2023 <span><i class="fa fa-tag" aria-hidden="true"></i> {{ Myfundraiser.category }}</span></p>
+                <p class="created">Created July, 29th, 2023 <span><i class="fa fa-tag" aria-hidden="true"></i> {{ Myfundraiser.category }} Events</span></p>
             </div>
             <div class="donate-box">
                 <h4 class="goal">{{ Myfundraiser.ayakenewe }}10000 Goal</h4>

@@ -9,6 +9,9 @@ import MyFundraiser from '../views/MyFundraiser.vue'
 import fashaDetails from '../views/DetailsFundraiser.vue'
 import AllFundraiser from '../views/AllFundraiser.vue'
 import Donate from '../views/PayingView'
+import Mission from '../views/OurmissionView.vue'
+import Vision from '../views/OurvisionView.vue'
+import Contact from '../views/ContactView.vue'
 
 const routes = [
   { path: '/',name: 'home',component: HomeView},
@@ -30,6 +33,9 @@ const routes = [
   { path: '/details',name: 'fashaDetails',component: fashaDetails},
   { path: '/allfund',name: 'AllFundraiser',component: AllFundraiser},
   { path: '/donate',name: 'donate',component: Donate},
+  { path: '/mission',name: 'mission',component: Mission},
+  { path: '/vision',name: 'vision',component: Vision},
+  { path: '/contact',name: 'contact',component: Contact},
 ]
 
 const router = createRouter({

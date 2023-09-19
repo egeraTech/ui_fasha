@@ -6,21 +6,21 @@
       <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam repellat fuga doloribus nulla, delectus voluptatibus quaerat.</p>
     </div>
     <div class="footer1">
-      <h2 class="title-foot">Quick Links</h2>
+      <h2 class="title-foot">Navigation Links</h2>
       <ul class="ule">
-        <li class="lii">About</li>
-        <li class="lii">Our mission</li>
-        <li class="lii">Our vision</li>
-        <li class="lii">Contact us</li>
+        <li class="lii"><router-link class="links" to="/">Home</router-link></li>
+        <li class="lii"><router-link class="links" to="/about">About</router-link></li>
+        <li class="lii"><router-link class="links" to="/howitworks">How it works</router-link></li>
+        <li class="lii"><router-link class="links" to="/allfund">Fundraiser</router-link></li>
       </ul>
     </div>
     <div class="footer1">
       <h2 class="title-foot">Quick Links</h2>
       <ul class="ule">
-        <li class="lii">About</li>
-        <li class="lii">Our mission</li>
-        <li class="lii">Our vision</li>
-        <li class="lii">Contact us</li>
+        <li class="lii"><router-link class="links" to="/about">About</router-link></li>
+        <li class="lii"><router-link class="links" to="/mission">Our mission</router-link></li>
+        <li class="lii"><router-link class="links" to="/vision">Our vision</router-link></li>
+        <li class="lii"><router-link class="links" to="/contact">Contact us</router-link></li>
       </ul>
     </div>
     <div class="footer1">
@@ -75,6 +75,11 @@ footer{
   padding:0.5rem 0 0.5rem 0;
   font-size:1rem;
   color:#f9f9f9;
+}
+.ule .lii .links{
+  color:#f9f9f9;
+  text-decoration:none;
+  cursor:pointer;
 }
 .line-desc{
   text-align:center;
